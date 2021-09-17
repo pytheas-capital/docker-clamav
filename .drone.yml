@@ -1,5 +1,4 @@
 pipeline:
-
   test_build:
     image: docker:18.09
     environment:
