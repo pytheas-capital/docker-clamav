@@ -22,6 +22,7 @@ spec:
     metadata:
       labels:
         name: clamav
+        namespace: clamav
     spec:
       containers:
         - name: clamd
@@ -30,7 +31,7 @@ spec:
             - name: UPDATE
               value: "false"
           ports:
-            - containerPort: 3200
+            - containerPort: 3310
               name: api
               protocol: TCP
           volumeMounts:

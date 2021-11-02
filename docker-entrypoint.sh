@@ -26,7 +26,8 @@ function process_file() {
 
 process_file "${CLAMD_SETTINGS_CSV}" /usr/local/etc/clamd.conf
 process_file "${FRESHCLAM_SETTINGS_CSV}" /usr/local/etc/freshclam.conf
-
+/usr/local/bin/freshclam
+cp -R /var/lib/clamav-initial/* /var/lib/clamav/
 # start in background
-freshclam -d &
-clamd
+/usr/local/bin/freshclam -d &
+/usr/local/sbin/clamd
